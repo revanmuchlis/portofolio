@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portofolio Revan Muchlis Setiawan - Web Developer & UI/UX Designer dari Indonesia">
+    <meta name="keywords"
+        content="web developer, UI/UX designer, portofolio, HTML, CSS, JavaScript, frontend, majalengka">
+    <meta name="author" content="Revan Muchlis Setiawan">
+    <title>Portofolio - Revan Muchlis Setiawan</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Glowing Cursor Follower -->
+    <div id="cursor-glow"></div>
+
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#hero" class="logo">Porto<span>folio</span></a>
+
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="nav-item active" data-section="hero">Beranda</a></li>
+                    <li><a href="#about" class="nav-item" data-section="about">Tentang</a></li>
+                    <li><a href="#skills" class="nav-item" data-section="skills">Keahlian</a></li>
+                    <li><a href="#projects" class="nav-item" data-section="projects">Proyek</a></li>
+                    <li><a href="#contact" class="nav-item" data-section="contact">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- ========== HERO ========== -->
+        <section id="hero" class="hero">
+            <div class="hero-container">
+
+                <!-- Left: Text Content -->
+                <div class="hero-content">
+                    <div class="badge-status">
+                        <span class="pulse-dot"></span> Terbuka untuk Kolaborasi & Proyek Baru
+                    </div>
+
+                    <p class="greeting">Halo semua 👋, saya</p>
+                    <h1 class="hero-name">Revan Muchlis Setiawan</h1>
+                    <p class="subtitle">Web Developer & UI/UX Designer</p>
+                    <p class="bio-short">Siswa yang berfokus pada pengembangan web dan desain antarmuka digital yang
+                        menarik serta fungsional.</p>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">4+</span>
+                            <span class="stat-label">Teknologi</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-num">4+</span>
+                            <span class="stat-label">Proyek</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Dedikasi</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary" id="btn-hire">Hubungi Saya</a>
+                        <a href="#projects" class="btn btn-secondary" id="btn-projects">Lihat Proyek</a>
+                    </div>
+                </div>
+
+                <!-- Right: Photo Visual -->
+                <div class="hero-visual">
+                    <div class="photo-frame">
+                        <div class="photo-glow"></div>
+                        <img src="./profile.jpeg" alt="Foto Profil Revan Muchlis Setiawan" class="profile-photo">
+                        <div class="photo-badge badge-tl">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                            <span>Web Dev</span>
+                        </div>
+                        <div class="photo-badge badge-br">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                            </svg>
+                            <span>UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll ke bawah</span>
+                <div class="scroll-arrow">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </div>
+            </a>
+        </section>
+
+        <!-- ========== ABOUT ========== -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Tentang</span>
+                    <h2 class="section-title">Siapa Saya?</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-block">
+                        <p>Saya adalah seorang pelajar yang memiliki ketertarikan tinggi di dunia pemrograman web dan
+                            desain antarmuka. Saya senang mempelajari teknologi baru, memecahkan masalah melalui kode,
+                            serta merancang tampilan aplikasi yang intuitif.</p>
+                        <p style="margin-top:1.2rem; color:var(--text-secondary, #94a3b8);">Saya percaya bahwa kode yang
+                            baik bukan hanya kode yang berjalan, tetapi kode yang dapat dibaca, dipelihara, dan
+                            memberikan nilai nyata serta kenyamanan bagi setiap pengguna.</p>
+                    </div>
+
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="info-label">Nama</span>
+                                <span class="info-value">Revan Muchlis Setiawan</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" />
+                                    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="info-label">Peran</span>
+                                <span class="info-value">Web Developer &amp; UI/UX</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="info-label">Status</span>
+                                <span class="info-value">Pelajar SMKN 1 MAJALENGKA</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="info-label">Lokasi</span>
+                                <span class="info-value">Indonesia</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value">revanmuchlissetiawan@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="info-label">Instagram</span>
+                                <span class="info-value">@shrix_005</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS ========== -->
+        <section id="skills" class="section section-dark">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Kemampuan</span>
+                    <h2 class="section-title">Keahlian Saya</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill 1 -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">HTML &amp; CSS</h3>
+                        <p class="skill-desc">Membuat struktur dan tampilan web yang responsif, modern, dan semantik.
+                        </p>
+                        <span class="skill-level-badge">Advanced</span>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-desc">Menambahkan interaktivitas dinamis, animasi, dan logika pada antarmuka
+                            web.</p>
+                        <span class="skill-level-badge">Intermediate</span>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <line x1="3" y1="9" x2="21" y2="9" />
+                                <line x1="9" y1="21" x2="9" y2="9" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">UI/UX Design</h3>
+                        <p class="skill-desc">Merancang prototipe, wireframe, dan tata letak aplikasi modern dengan
+                            Figma.</p>
+                        <span class="skill-level-badge">Intermediate</span>
+                    </div>
+
+                    <!-- Skill 4 -->
+                    <div class="skill-card">
+                        <div class="skill-icon-wrap">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">PHP &amp; Database</h3>
+                        <p class="skill-desc">Mengembangkan backend fungsional dan pengelolaan basis data MySQL.</p>
+                        <span class="skill-level-badge">Intermediate</span>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Bar -->
+                <div class="tech-bar">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">Git</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS ========== -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Karya</span>
+                    <h2 class="section-title">Proyek Saya</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    <line x1="3" y1="9" x2="21" y2="9" />
+                                    <line x1="9" y1="21" x2="9" y2="9" />
+                                </svg>
+                            </div>
+                            <span class="project-status">Selesai</span>
+                        </div>
+                        <h3 class="project-title">Portofolio Website</h3>
+                        <p class="project-desc">Website portofolio pribadi modern dan interaktif dengan efek partikel,
+                            animasi kursor glow, dan tata letak responsif elegan.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Responsive</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                                    <line x1="12" y1="18" x2="12.01" y2="18" />
+                                </svg>
+                            </div>
+                            <span class="project-status">Selesai</span>
+                        </div>
+                        <h3 class="project-title">Desain UI Mobile App</h3>
+                        <p class="project-desc">Prototipe desain antarmuka aplikasi mobile interaktif menggunakan Figma
+                            dengan pendekatan user-centered design yang bersih.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Figma</span>
+                            <span class="project-tag">UI/UX</span>
+                            <span class="project-tag">Prototyping</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                                </svg>
+                            </div>
+                            <span class="project-status">Selesai</span>
+                        </div>
+                        <h3 class="project-title">Toko Buku</h3>
+                        <p class="project-desc">Aplikasi membeli buku bekas online dengan alur pembelian intuitif dan 5
+                            fitur utama pengelolaan katalog serta pesanan.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 14 14" />
+                                </svg>
+                            </div>
+                            <span class="project-status"
+                                style="color: #f59e0b; border-color: rgba(245, 158, 11, 0.4);">Dalam Pengembangan</span>
+                        </div>
+                        <h3 class="project-title">Project Website PKL</h3>
+                        <p class="project-desc">Aplikasi web untuk pendaftaran dan monitoring siswa Praktik Kerja
+                            Lapangan (PKL) terintegrasi.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Laragon</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <div class="project-icon">
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 14 14" />
+                                </svg>
+                            </div>
+                            <span class="project-status"
+                                style="color: #f59e0b; border-color: rgba(245, 158, 11, 0.4);">Dalam Pengembangan</span>
+                        </div>
+                        <h3 class="project-title">Website Utility Tools</h3>
+                        <p class="project-desc">Website yang menyediakan berbagai alat bantu cepat untuk memproses,
+                            mengubah, mengecek, atau merapikan data teks dan kode secara instan tanpa perlu mengunduh
+                            perangkat lunak tambahan.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT ========== -->
+        <section id="contact" class="section section-dark">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag">Kontak</span>
+                    <h2 class="section-title">Hubungi Saya</h2>
+                </div>
+                <p class="section-subtitle">Ada ide proyek, pertanyaan, atau sekadar ingin menyapa? Jangan ragu untuk
+                    menghubungi saya!</p>
+
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <div class="contact-item-row">
+                            <div class="contact-icon-wrap">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="ci-label">Email</p>
+                                <a href="mailto:revanmuchlissetiawan@gmail.com"
+                                    class="ci-value">revanmuchlissetiawan@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-row">
+                            <div class="contact-icon-wrap">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="ci-label">Instagram</p>
+                                <a href="https://www.instagram.com/shrix_005/" target="_blank" rel="noopener noreferrer"
+                                    class="ci-value">@shrix_005</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-row">
+                            <div class="contact-icon-wrap">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="ci-label">Lokasi</p>
+                                <span class="ci-value">Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <p>Respons biasanya dalam <strong>24 jam</strong>. Saya selalu terbuka untuk peluang baru dan
+                            kolaborasi yang menantang!</p>
+                        <a href="mailto:revanmuchlissetiawan@gmail.com" class="btn btn-primary btn-lg" id="btn-email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            Kirim Email Sekarang
+                        </a>
+                        <a href="https://www.instagram.com/shrix_005/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline btn-lg" id="btn-instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                            Follow Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-logo">Porto<span>folio</span></p>
+            <p class="footer-tagline">Web Developer &amp; UI/UX Designer</p>
+            <div class="footer-links">
+                <a href="mailto:revanmuchlissetiawan@gmail.com">Email</a>
+                <a href="https://www.instagram.com/shrix_005/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Revan Muchlis Setiawan. Dibuat dengan HTML, CSS &amp; JavaScript murni.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
